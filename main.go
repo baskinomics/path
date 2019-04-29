@@ -26,7 +26,6 @@ type PathVar struct {
 // Returns the pretty-printed version of the input PATH parameter.
 func (path *PathVar) pretty() string {
 	var output strings.Builder
-	//output.Write("$PATH\n")
 	for _, dir := range path.directoryComponents {
 		fmt.Fprintln(&output, dir)
 	}
