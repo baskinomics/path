@@ -1,15 +1,34 @@
 package main
 
-import "os"
-import "strings"
-import "fmt"
+import (
+	"fmt"
+	"os"
+	"strings"
+)
 
+// TODO Add documentation.
 func main() {
 	path, isPathPresent := os.LookupEnv("PATH")
 
 	if isPathPresent {
-		values := strings.Split(path, ":")
-		fmt.Println("$PATH=", values)
+		pathVar := PathVar{path, strings.Split(path, ":")}
+		fmt.Println(pathVar.pretty())
 	}
 
+}
+
+// A PathVar represents a Unix $PATH environment variable and its component directories.
+type PathVar struct {
+	path                string
+	directoryComponents []string
+}
+
+// Returns the pretty-printed version of the input PATH parameter.
+func (path *PathVar) pretty() string {
+	var output strings.Builder
+	//output.Write("$PATH\n")
+	for _, dir := range path.directoryComponents {
+		fmt.Fprintln(&output, dir)
+	}
+	return output.String()
 }
