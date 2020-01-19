@@ -1,28 +1,27 @@
 # `path`
-Pretty-prints a user's `$PATH` environment variable. Very much a work-in-progress. End goal will be to adding and removing of directory components to `$PATH`.
-
-## Instructions
-
-TODO
+Enables a user to manage the contents of their `$PATH` environment variable in a standardized fashion, without touching your dotfiles.
 
 ```bash
-$ go build
-$ ./path
-/home/zoo/.sdkman/candidates/micronaut/current/bin
-/home/zoo/.sdkman/candidates/java/current/bin
-/home/zoo/.sdkman/candidates/gradle/current/bin
-/home/zoo/development/exa-linux-x86_64-0.8.0
-/usr/local/go/bin
-/home/zoo/development/git/go
-/home/zoo/.cargo/bin
-/home/zoo/bin
-/usr/local/sbin
-/usr/local/bin
-/usr/sbin
-/usr/bin
-/sbin
-/bin
-/usr/games
-/usr/local/games
-/snap/bin
+$ path list
+Current $PATH environment variable:
+  tag[value: 'Tag', path: '/bin']
+  tag[value: 'Tag', path: '/home/zoo/.cargo/bin']
+  tag[value: 'Tag', path: '/home/zoo/.sdkman/candidates/gradle/current/bin']
+  tag[value: 'Tag', path: '/home/zoo/.sdkman/candidates/java/current/bin']
+  tag[value: 'Tag', path: '/home/zoo/.sdkman/candidates/kotlin/current/bin']
+  tag[value: 'Tag', path: '/home/zoo/.sdkman/candidates/maven/current/bin']
+  tag[value: 'Tag', path: '/home/zoo/.sdkman/candidates/micronaut/current/bin']
+  tag[value: 'Tag', path: '/home/zoo/.sdkman/candidates/springboot/current/bin']
+  tag[value: 'Tag', path: '/home/zoo/bin']
+  tag[value: 'Tag', path: '/home/zoo/development/exa-linux-x86_64-0.8.0']
+  tag[value: 'Tag', path: '/home/zoo/development/git/go']
+  tag[value: 'Tag', path: '/sbin']
+  tag[value: 'Tag', path: '/snap/bin']
+  tag[value: 'Tag', path: '/usr/bin']
+  tag[value: 'Tag', path: '/usr/games']
+  tag[value: 'Tag', path: '/usr/local/bin']
+  tag[value: 'Tag', path: '/usr/local/games']
+  tag[value: 'Tag', path: '/usr/local/go/bin']
+  tag[value: 'Tag', path: '/usr/local/sbin']
+  tag[value: 'Tag', path: '/usr/sbin']
 ```
