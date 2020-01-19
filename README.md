@@ -1,7 +1,7 @@
 # `path`
 Enables a user to manage the contents of their `$PATH` environment variable in a standardized fashion, without touching your dotfiles.
 
-```bash
+```
 $ path --help
 path 0.0.1
 Sean Baskin <seanbaskin@gmail.com
