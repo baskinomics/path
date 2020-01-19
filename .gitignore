@@ -6,3 +6,6 @@ path
 
 /target
 **/*.rs.bk
+
+# VSCode
+.vscode/
