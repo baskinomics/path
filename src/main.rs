@@ -28,6 +28,17 @@ fn main() {
             App::new("list")
                 .about("Lists the <tag, path> key-value pairs in the $PATH environment variable."),
         )
+        .subcommand(
+            App::new("add")
+                .about("Adds a new <tag, path> key-value pair, and adds the path to $PATH."),
+        )
+        .subcommand(
+            App::new("remove")
+                .about("Removes a tag key-value pair, and removes the path from $PATH."),
+        )
+        .subcommand(
+            App::new("update").about("Updates a tag and updates the associated path in $PATH."),
+        )
         .get_matches();
 
     if let Some(ref _matches) = matches.subcommand_matches("list") {
