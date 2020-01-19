@@ -12,3 +12,4 @@ path
 
 # IntelliJ
 .idea/
+*.iml
