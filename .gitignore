@@ -9,3 +9,6 @@ path
 
 # VSCode
 .vscode/
+
+# IntelliJ
+.idea/
