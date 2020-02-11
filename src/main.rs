@@ -22,7 +22,7 @@ impl Tag {
 fn main() {
     let matches = App::new("path")
         .version("0.0.1")
-        .author("Sean Baskin <seanbaskin@gmail.com")
+        .author("Sean Baskin <seanbaskin@gmail.com>")
         .about("Sane $PATH variable management for the 21st century.")
         .subcommand(
             App::new("list")
